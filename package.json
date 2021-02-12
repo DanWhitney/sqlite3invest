@@ -5,16 +5,28 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config=webpack.config.js",
-    "run": "node ./dist/index.js"
+    "run": "node ./dist/index.js",
+    "opening_and_closing": "node ./dist/opening_and_closing.js",
+    "connecting_to_a_disk_file_database": "node ./dist/connecting_to_a_disk_file_database.js",
+    "inserting_data_into_a_sqlite_table": "node ./dist/inserting_data_into_a_sqlite_table.js",
+    "insert_multiple_rows_into_a_table_at_a_time": "node ./dist/insert_multiple_rows_into_a_table_at_a_time.js",
+    "querying_all_rows_with_all_method": "node ./dist/querying_all_rows_with_all_method.js",
+    "query_the_first_row_in_the_result_set": "node ./dist/query_the_first_row_in_the_result_set.js",
+    "query_rows_with_each_method": "node ./dist/query_rows_with_each_method.js",
+    "updating_data_example": "node ./dist/updating_data_example.js"
+
   },
   "author": "Dan Whitney",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "sqlite3": "^5.0.1"
+  },
   "devDependencies": {
-    "ts-loader": "^8.0.3",
-    "typescript": "^4.0.2",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
+    "@types/sqlite3": "^3.1.7",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.1.5",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
     "webpack-node-externals": "^2.5.2"
   }
 }
