@@ -1,7 +1,7 @@
 {
-  "name": "typescript-webpack-min",
+  "name": "sqlite3invest",
   "version": "1.0.0",
-  "description": "Minium install required for typescript using webpack to transpile to js for node",
+  "description": "investigation into sqlite3",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config=webpack.config.js",
@@ -13,15 +13,21 @@
     "querying_all_rows_with_all_method": "node ./dist/querying_all_rows_with_all_method.js",
     "query_the_first_row_in_the_result_set": "node ./dist/query_the_first_row_in_the_result_set.js",
     "query_rows_with_each_method": "node ./dist/query_rows_with_each_method.js",
-    "updating_data_example": "node ./dist/updating_data_example.js"
-
+    "updating_data_example": "node ./dist/updating_data_example.js",
+    "create_mock_db": "node ./dist/create_mock_db.js",
+    "type_orm_exp1": "node ./dist/type_orm_exp1.js",
+    "type_orm_exp2": "node ./dist/type_orm_exp2.js",
+    "type_orm_exp3": "node ./dist/type_orm_exp3.js"
   },
   "author": "Dan Whitney",
   "license": "ISC",
   "dependencies": {
-    "sqlite3": "^5.0.1"
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.1",
+    "typeorm": "^0.2.31"
   },
   "devDependencies": {
+    "@types/node": "^14.14.28",
     "@types/sqlite3": "^3.1.7",
     "ts-loader": "^8.0.17",
     "typescript": "^4.1.5",
